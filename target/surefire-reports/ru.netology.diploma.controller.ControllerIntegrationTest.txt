@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: ru.netology.diploma.controller.ControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.52 s <<< FAILURE! - in ru.netology.diploma.controller.ControllerIntegrationTest
+ru.netology.diploma.controller.ControllerIntegrationTest  Time elapsed: 2.52 s  <<< ERROR!
+org.testcontainers.containers.ContainerLaunchException: Container startup failed for image postgres:16.2
+Caused by: org.rnorth.ducttape.RetryCountExceededException: Retry limit hit with exception
+Caused by: org.testcontainers.containers.ContainerLaunchException: Could not create/start container
+Caused by: org.testcontainers.ext.ScriptUtils$ScriptLoadException: Could not load classpath init script: /db.sql. Resource not found.
+

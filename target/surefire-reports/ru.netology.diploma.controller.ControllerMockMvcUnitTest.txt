@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: ru.netology.diploma.controller.ControllerMockMvcUnitTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.958 s <<< FAILURE! - in ru.netology.diploma.controller.ControllerMockMvcUnitTest
+postNewFileThenGivenOkStatus  Time elapsed: 0.126 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getBytes()" because "file" is null
+	at ru.netology.diploma.controller.ControllerMockMvcUnitTest.postNewFileThenGivenOkStatus(ControllerMockMvcUnitTest.java:82)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart.MultipartFile.getBytes()" because "file" is null
+	at ru.netology.diploma.controller.ControllerMockMvcUnitTest.postNewFileThenGivenOkStatus(ControllerMockMvcUnitTest.java:82)
+
