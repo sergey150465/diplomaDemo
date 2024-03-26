@@ -120,8 +120,6 @@ public class ClientFileServiceIntegrationTest {
         Assertions.assertNotNull(result);
     }
 
-//    Тест на изменение имени файла changeFileName комментим при запуске
-//    других тестов и запускаем отдельно от них
     @Test
     @WithMockUser(username = "log", password = "pass", authorities = "USER1")
     void changeFileName() {
